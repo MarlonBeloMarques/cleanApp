@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5414FEE02758467F009152F2 /* Domain.docc in Sources */ = {isa = PBXBuildFile; fileRef = 5414FEDF2758467F009152F2 /* Domain.docc */; };
+		5414FEE62758498C009152F2 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5414FEE52758498C009152F2 /* AddAccount.swift */; };
+		5414FEE827584EC6009152F2 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5414FEE727584EC6009152F2 /* AccountModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5414FEDC2758467F009152F2 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5414FEDF2758467F009152F2 /* Domain.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Domain.docc; sourceTree = "<group>"; };
+		5414FEE52758498C009152F2 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
+		5414FEE727584EC6009152F2 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 			isa = PBXGroup;
 			children = (
 				5414FEDF2758467F009152F2 /* Domain.docc */,
+				5414FEE52758498C009152F2 /* AddAccount.swift */,
+				5414FEE727584EC6009152F2 /* AccountModel.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -129,6 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5414FEE02758467F009152F2 /* Domain.docc in Sources */,
+				5414FEE827584EC6009152F2 /* AccountModel.swift in Sources */,
+				5414FEE62758498C009152F2 /* AddAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

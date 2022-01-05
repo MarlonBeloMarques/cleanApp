@@ -8,7 +8,7 @@ class AlamorifeAdapter {
         self.session = session
     }
     func post(to url: URL) {
-        session.request(url).resume()
+        session.request(url, method: .post).resume()
     }
 }
 
@@ -23,6 +23,7 @@ class AlamorifeAdapterTests: XCTestCase {
         let exp = expectation(description: "waiting")
         UrlProtocolStub.observeRequest() { request in
             XCTAssertEqual(url, request.url)
+            XCTAssertEqual("POST", request.httpMethod)
             exp.fulfill()
         }
         wait(for: [exp], timeout: 1)

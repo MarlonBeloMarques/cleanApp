@@ -16,26 +16,8 @@ class AlamorifeAdapter {
 class AlamorifeAdapterTests: XCTestCase {
     func test_post_should_make_request_with_valid_url_and_method() {
         let url = makeUrl()
-        let configuration = URLSessionConfiguration.default
-        configuration.protocolClasses = [UrlProtocolStub.self]
-        let session = Session(configuration: configuration)
-        let sut = AlamorifeAdapter(session: session)
-        sut.post(to: url, with: nil)
-        let exp = expectation(description: "waiting")
-        UrlProtocolStub.observeRequest() { request in
-            XCTAssertNil(request.httpBodyStream)
-            exp.fulfill()
-        }
-        wait(for: [exp], timeout: 1)
-    }
-    
-    func test_post_should__make_request_with_no_data() {
-        let url = makeUrl()
-        let configuration = URLSessionConfiguration.default
-        configuration.protocolClasses = [UrlProtocolStub.self]
-        let session = Session(configuration: configuration)
-        let sut = AlamorifeAdapter(session: session)
-        sut.post(to: url, with: makeValidData())
+        let sut = makeSut()
+        sut.post(to: makeUrl(), with: makeValidData())
         let exp = expectation(description: "waiting")
         UrlProtocolStub.observeRequest() { request in
             XCTAssertEqual(url, request.url)
@@ -44,6 +26,26 @@ class AlamorifeAdapterTests: XCTestCase {
             exp.fulfill()
         }
         wait(for: [exp], timeout: 1)
+    }
+    
+    func test_post_should__make_request_with_no_data() {
+        let sut = makeSut()
+        sut.post(to: makeUrl(), with: nil)
+        let exp = expectation(description: "waiting")
+        UrlProtocolStub.observeRequest() { request in
+            XCTAssertNil(request.httpBodyStream)
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 1)
+    }
+}
+
+extension AlamorifeAdapterTests {
+    func makeSut() -> AlamorifeAdapter {
+        let configuration = URLSessionConfiguration.default
+        configuration.protocolClasses = [UrlProtocolStub.self]
+        let session = Session(configuration: configuration)
+        return AlamorifeAdapter(session: session)
     }
 }
 

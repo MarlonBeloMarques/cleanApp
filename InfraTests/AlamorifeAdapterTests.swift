@@ -31,11 +31,13 @@ class AlamorifeAdapterTests: XCTestCase {
 }
 
 extension AlamorifeAdapterTests {
-    func makeSut() -> AlamorifeAdapter {
+    func makeSut(file: StaticString = #filePath, line: UInt = #line) -> AlamorifeAdapter {
         let configuration = URLSessionConfiguration.default
         configuration.protocolClasses = [UrlProtocolStub.self]
         let session = Session(configuration: configuration)
-        return AlamorifeAdapter(session: session)
+        let sut = AlamorifeAdapter(session: session)
+        checkMemoryLeak(for: sut, file: file, line: line)
+        return sut
     }
     
     func testRequest(url: URL = makeUrl(), data: Data?, action: @escaping (URLRequest) -> Void) {

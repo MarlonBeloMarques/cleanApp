@@ -1,5 +1,6 @@
 import XCTest
 import Alamofire
+import Data
 
 class AlamorifeAdapter {
     private let session: Session
@@ -8,8 +9,7 @@ class AlamorifeAdapter {
         self.session = session
     }
     func post(to url: URL, with data: Data?) {
-        let json = data == nil ? nil : try? JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String: Any]
-        session.request(url, method: .post, parameters: json, encoding: JSONEncoding.default).resume()
+        session.request(url, method: .post, parameters: data?.toJson(), encoding: JSONEncoding.default).resume()
     }
 }
 

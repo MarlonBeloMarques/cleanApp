@@ -33,6 +33,7 @@
 		546C8D2C276F76C300525AEA /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D2B276F76C300525AEA /* HttpClientSpy.swift */; };
 		546C8D2E276F771700525AEA /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D2D276F771700525AEA /* AccountModelFactory.swift */; };
 		54F01B5C279C3ED10095FC3D /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01B5B279C3ED10095FC3D /* AlamofireAdapter.swift */; };
+		54F01B60279C43760095FC3D /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01B5F279C43760095FC3D /* UrlProtocolStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		546C8D2B276F76C300525AEA /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
 		546C8D2D276F771700525AEA /* AccountModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModelFactory.swift; sourceTree = "<group>"; };
 		54F01B5B279C3ED10095FC3D /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
+		54F01B5F279C43760095FC3D /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,7 +295,7 @@
 		5429F44A27850C5E00517371 /* InfraTests */ = {
 			isa = PBXGroup;
 			children = (
-				5429F44B27850C5E00517371 /* AlamorifeAdapterTests.swift */,
+				54F01B5E279C435B0095FC3D /* Http */,
 			);
 			path = InfraTests;
 			sourceTree = "<group>";
@@ -320,6 +322,15 @@
 			isa = PBXGroup;
 			children = (
 				54F01B5B279C3ED10095FC3D /* AlamofireAdapter.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		54F01B5E279C435B0095FC3D /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				5429F44B27850C5E00517371 /* AlamorifeAdapterTests.swift */,
+				54F01B5F279C43760095FC3D /* UrlProtocolStub.swift */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -591,6 +602,7 @@
 				5429F45A2785178000517371 /* TestFactories.swift in Sources */,
 				5429F44C27850C5E00517371 /* AlamorifeAdapterTests.swift in Sources */,
 				5429F4592785177B00517371 /* TestExtensions.swift in Sources */,
+				54F01B60279C43760095FC3D /* UrlProtocolStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

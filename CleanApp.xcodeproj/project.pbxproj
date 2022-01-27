@@ -46,6 +46,7 @@
 		54F01BA127A074A90095FC3D /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D2D276F771700525AEA /* AccountModelFactory.swift */; };
 		54F01BA227A0A63E0095FC3D /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D26276F757700525AEA /* TestExtensions.swift */; };
 		54F01BA427A0AA600095FC3D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01BA327A0AA600095FC3D /* LoadingView.swift */; };
+		54F01BA727A2BF520095FC3D /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01BA627A2BF520095FC3D /* SignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +184,7 @@
 		54F01B95279DF5D30095FC3D /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		54F01B9B279E01DE0095FC3D /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		54F01BA327A0AA600095FC3D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		54F01BA627A2BF520095FC3D /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,7 +472,7 @@
 		54F01B98279DF6130095FC3D /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				54F01B8D279DF5200095FC3D /* SignUpPresenter.swift */,
+				54F01BA527A2BF220095FC3D /* SignUp */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -489,6 +491,15 @@
 				54F01B9B279E01DE0095FC3D /* EmailValidator.swift */,
 			);
 			path = Validators;
+			sourceTree = "<group>";
+		};
+		54F01BA527A2BF220095FC3D /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				54F01B8D279DF5200095FC3D /* SignUpPresenter.swift */,
+				54F01BA627A2BF520095FC3D /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -875,6 +886,7 @@
 			files = (
 				54F01B8E279DF5200095FC3D /* SignUpPresenter.swift in Sources */,
 				54F01BA427A0AA600095FC3D /* LoadingView.swift in Sources */,
+				54F01BA727A2BF520095FC3D /* SignUpViewModel.swift in Sources */,
 				54F01B96279DF5D30095FC3D /* AlertView.swift in Sources */,
 				54F01B9C279E01DE0095FC3D /* EmailValidator.swift in Sources */,
 			);

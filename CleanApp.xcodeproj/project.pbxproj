@@ -57,6 +57,8 @@
 		54F01BCC27A5CE3E0095FC3D /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01BCB27A5CE3E0095FC3D /* SignUpViewControllerTests.swift */; };
 		54F01BD427A5D0970095FC3D /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F01B78279CB9560095FC3D /* Presentation.framework */; };
 		54F01BD527A5D0970095FC3D /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54F01B78279CB9560095FC3D /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54F01BDA27A5D8890095FC3D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01BD927A5D8890095FC3D /* SignUpViewController.swift */; };
+		54F01BDC27A5D8CA0095FC3D /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F01BDB27A5D8CA0095FC3D /* SignUp.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +231,8 @@
 		54F01BBF27A5CE3E0095FC3D /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F01BC627A5CE3E0095FC3D /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F01BCB27A5CE3E0095FC3D /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
+		54F01BD927A5D8890095FC3D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		54F01BDB27A5D8CA0095FC3D /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -615,6 +619,8 @@
 		54F01BC027A5CE3E0095FC3D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				54F01BD927A5D8890095FC3D /* SignUpViewController.swift */,
+				54F01BDB27A5D8CA0095FC3D /* SignUp.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -899,6 +905,7 @@
 					};
 					54F01BBE27A5CE3E0095FC3D = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					54F01BC527A5CE3E0095FC3D = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -996,6 +1003,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F01BDC27A5D8CA0095FC3D /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1104,6 +1112,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F01BDA27A5D8890095FC3D /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1701,6 +1710,7 @@
 		54F01BCF27A5CE3E0095FC3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1724,6 +1734,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1731,6 +1742,7 @@
 		54F01BD027A5CE3E0095FC3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1761,6 +1773,7 @@
 		54F01BD227A5CE3E0095FC3D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1778,6 +1791,7 @@
 		54F01BD327A5CE3E0095FC3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

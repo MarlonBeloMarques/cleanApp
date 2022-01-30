@@ -60,6 +60,7 @@
 		54F01BDA27A5D8890095FC3D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01BD927A5D8890095FC3D /* SignUpViewController.swift */; };
 		54F01BDC27A5D8CA0095FC3D /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F01BDB27A5D8CA0095FC3D /* SignUp.storyboard */; };
 		54F01BE327A71E1E0095FC3D /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01BE227A71E1E0095FC3D /* TestExtensions.swift */; };
+		54F01BE627A72FEB0095FC3D /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01BE527A72FEB0095FC3D /* UIViewControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -235,6 +236,7 @@
 		54F01BD927A5D8890095FC3D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		54F01BDB27A5D8CA0095FC3D /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		54F01BE227A71E1E0095FC3D /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
+		54F01BE527A72FEB0095FC3D /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -621,6 +623,7 @@
 		54F01BC027A5CE3E0095FC3D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				54F01BE427A72FC40095FC3D /* Helpers */,
 				54F01BDF27A71DC30095FC3D /* Scenes */,
 			);
 			path = UI;
@@ -674,6 +677,14 @@
 				54F01BE227A71E1E0095FC3D /* TestExtensions.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		54F01BE427A72FC40095FC3D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				54F01BE527A72FEB0095FC3D /* UIViewControllerExtensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1155,6 +1166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F01BE627A72FEB0095FC3D /* UIViewControllerExtensions.swift in Sources */,
 				54F01BDA27A5D8890095FC3D /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

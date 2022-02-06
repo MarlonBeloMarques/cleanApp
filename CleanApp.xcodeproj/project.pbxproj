@@ -54,6 +54,7 @@
 		546E6BB527B01690003480BA /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E6BB427B01690003480BA /* SignUpIntegrationTests.swift */; };
 		546E6BB627B016AB003480BA /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01BB527A374EF0095FC3D /* AddAccountSpy.swift */; };
 		546E6BB727B0181E003480BA /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D26276F757700525AEA /* TestExtensions.swift */; };
+		546E6BBA27B02194003480BA /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E6BB927B02194003480BA /* WeakVarProxy.swift */; };
 		54F01B5C279C3ED10095FC3D /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01B5B279C3ED10095FC3D /* AlamofireAdapter.swift */; };
 		54F01B60279C43760095FC3D /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01B5F279C43760095FC3D /* UrlProtocolStub.swift */; };
 		54F01B68279C51410095FC3D /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01B67279C51410095FC3D /* AddAccountIntegrationTests.swift */; };
@@ -349,6 +350,7 @@
 		546E6BAF27B0076E003480BA /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		546E6BB227B00868003480BA /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		546E6BB427B01690003480BA /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
+		546E6BB927B02194003480BA /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
 		54F01B5B279C3ED10095FC3D /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		54F01B5F279C43760095FC3D /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		54F01B65279C51410095FC3D /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -687,6 +689,7 @@
 		546E6B6427AF10CC003480BA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				546E6BB827B02176003480BA /* Proxies */,
 				546E6BB127B0084F003480BA /* Composers */,
 				546E6BAC27AF142E003480BA /* Factories */,
 				546E6B6527AF10CC003480BA /* AppDelegate.swift */,
@@ -728,6 +731,14 @@
 				546E6BB227B00868003480BA /* SignUpComposer.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		546E6BB827B02176003480BA /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+				546E6BB927B02194003480BA /* WeakVarProxy.swift */,
+			);
+			path = Proxies;
 			sourceTree = "<group>";
 		};
 		54F01B5D279C3FEA0095FC3D /* Http */ = {
@@ -1558,6 +1569,7 @@
 				546E6B6627AF10CC003480BA /* AppDelegate.swift in Sources */,
 				546E6BAE27AF1448003480BA /* ControllerFactory.swift in Sources */,
 				546E6B6827AF10CC003480BA /* SceneDelegate.swift in Sources */,
+				546E6BBA27B02194003480BA /* WeakVarProxy.swift in Sources */,
 				546E6BB327B00868003480BA /* SignUpComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,6 @@
 import XCTest
 import Main
+import SwiftUI
 
 class SignUpIntegrationTests: XCTestCase {
     func test_ui_presentation_integration() {

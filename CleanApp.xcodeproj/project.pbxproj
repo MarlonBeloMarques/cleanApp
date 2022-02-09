@@ -56,6 +56,7 @@
 		546E6BBA27B02194003480BA /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E6BB927B02194003480BA /* WeakVarProxy.swift */; };
 		546E6BBF27B06DD7003480BA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E6BBE27B06DD7003480BA /* Environment.swift */; };
 		546E6BC127B3D9D0003480BA /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01BB827A376D60095FC3D /* TestFactories.swift */; };
+		546E6BC427B4830E003480BA /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E6BC327B4830E003480BA /* MainQueueDispatchDecorator.swift */; };
 		54F01B5C279C3ED10095FC3D /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01B5B279C3ED10095FC3D /* AlamofireAdapter.swift */; };
 		54F01B60279C43760095FC3D /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01B5F279C43760095FC3D /* UrlProtocolStub.swift */; };
 		54F01B68279C51410095FC3D /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01B67279C51410095FC3D /* AddAccountIntegrationTests.swift */; };
@@ -354,6 +355,7 @@
 		546E6BBC27B06C9E003480BA /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		546E6BBD27B06D23003480BA /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		546E6BBE27B06DD7003480BA /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		546E6BC327B4830E003480BA /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		54F01B5B279C3ED10095FC3D /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		54F01B5F279C43760095FC3D /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		54F01B65279C51410095FC3D /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -692,6 +694,7 @@
 		546E6B6427AF10CC003480BA /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				546E6BC227B482F7003480BA /* Decorators */,
 				546E6BBB27B06C88003480BA /* Env */,
 				546E6BB827B02176003480BA /* Proxies */,
 				546E6BB127B0084F003480BA /* Composers */,
@@ -760,6 +763,14 @@
 				546E6BB427B01690003480BA /* SignUpComposerTests.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		546E6BC227B482F7003480BA /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				546E6BC327B4830E003480BA /* MainQueueDispatchDecorator.swift */,
+			);
+			path = Decorators;
 			sourceTree = "<group>";
 		};
 		54F01B5D279C3FEA0095FC3D /* Http */ = {
@@ -1587,6 +1598,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				546E6BB027B0076E003480BA /* UseCaseFactory.swift in Sources */,
+				546E6BC427B4830E003480BA /* MainQueueDispatchDecorator.swift in Sources */,
 				546E6BBF27B06DD7003480BA /* Environment.swift in Sources */,
 				546E6B6627AF10CC003480BA /* AppDelegate.swift in Sources */,
 				546E6B6827AF10CC003480BA /* SceneDelegate.swift in Sources */,

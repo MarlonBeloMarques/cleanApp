@@ -55,6 +55,7 @@
 		546E6BB727B0181E003480BA /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D26276F757700525AEA /* TestExtensions.swift */; };
 		546E6BBA27B02194003480BA /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E6BB927B02194003480BA /* WeakVarProxy.swift */; };
 		546E6BBF27B06DD7003480BA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E6BBE27B06DD7003480BA /* Environment.swift */; };
+		546E6BC127B3D9D0003480BA /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01BB827A376D60095FC3D /* TestFactories.swift */; };
 		54F01B5C279C3ED10095FC3D /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01B5B279C3ED10095FC3D /* AlamofireAdapter.swift */; };
 		54F01B60279C43760095FC3D /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01B5F279C43760095FC3D /* UrlProtocolStub.swift */; };
 		54F01B68279C51410095FC3D /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F01B67279C51410095FC3D /* AddAccountIntegrationTests.swift */; };
@@ -1600,6 +1601,7 @@
 			files = (
 				546E6BB627B016AB003480BA /* AddAccountSpy.swift in Sources */,
 				546E6BB727B0181E003480BA /* TestExtensions.swift in Sources */,
+				546E6BC127B3D9D0003480BA /* TestFactories.swift in Sources */,
 				546E6BB527B01690003480BA /* SignUpComposerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

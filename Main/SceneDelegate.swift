@@ -1,4 +1,5 @@
 import UIKit
+import UI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
@@ -8,7 +9,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         let httpClient = makeAlamofireAdapter()
         let remoteAddAccount = makeRemoteAddAccount(httpClient: httpClient)
-        window?.rootViewController = makeSignUpController(addAccount: remoteAddAccount)
+        let signUpController = makeSignUpController(addAccount: remoteAddAccount)
+        let nav = NavigationController(rootViewController: signUpController)
+        window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }
 

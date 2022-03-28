@@ -30,6 +30,7 @@
 		5469FD7027EFBAD500858441 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FD6F27EFBAD500858441 /* Color.swift */; };
 		5469FD7327EFBC0C00858441 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FD7227EFBC0C00858441 /* RoundedTextField.swift */; };
 		5469FD7527EFC20100858441 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FD7427EFC20100858441 /* NavigationController.swift */; };
+		5469FD7727F272C100858441 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FD7627F272C100858441 /* Authentication.swift */; };
 		546C8D27276F757700525AEA /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D26276F757700525AEA /* TestExtensions.swift */; };
 		546C8D29276F761400525AEA /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D28276F761400525AEA /* TestFactories.swift */; };
 		546C8D2C276F76C300525AEA /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D2B276F76C300525AEA /* HttpClientSpy.swift */; };
@@ -366,6 +367,7 @@
 		5469FD6F27EFBAD500858441 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		5469FD7227EFBC0C00858441 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		5469FD7427EFC20100858441 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		5469FD7627F272C100858441 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		546C8D26276F757700525AEA /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		546C8D28276F761400525AEA /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		546C8D2B276F76C300525AEA /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
@@ -564,6 +566,7 @@
 			isa = PBXGroup;
 			children = (
 				5414FEE52758498C009152F2 /* AddAccount.swift */,
+				5469FD7627F272C100858441 /* Authentication.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -1688,6 +1691,7 @@
 				540E46E6275D53400030DCCB /* DomainError.swift in Sources */,
 				5414FEE827584EC6009152F2 /* AccountModel.swift in Sources */,
 				5414FEE62758498C009152F2 /* AddAccount.swift in Sources */,
+				5469FD7727F272C100858441 /* Authentication.swift in Sources */,
 				540E46DA275D48940030DCCB /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

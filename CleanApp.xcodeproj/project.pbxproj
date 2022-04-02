@@ -38,6 +38,8 @@
 		5469FD8327F4769800858441 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FD8227F4769800858441 /* LoginPresenter.swift */; };
 		5469FD8527F478C100858441 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FD8427F478C100858441 /* AuthenticationSpy.swift */; };
 		5469FD8827F8851F00858441 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5469FD8727F8851F00858441 /* Login.storyboard */; };
+		5469FD8B27F88F5C00858441 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FD8A27F88F5C00858441 /* LoginViewControllerTests.swift */; };
+		5469FD8D27F8904D00858441 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FD8C27F8904D00858441 /* LoginViewController.swift */; };
 		546C8D27276F757700525AEA /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D26276F757700525AEA /* TestExtensions.swift */; };
 		546C8D29276F761400525AEA /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D28276F761400525AEA /* TestFactories.swift */; };
 		546C8D2C276F76C300525AEA /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D2B276F76C300525AEA /* HttpClientSpy.swift */; };
@@ -382,6 +384,8 @@
 		5469FD8227F4769800858441 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPresenter.swift; path = Presentation/Presenters/Login/LoginPresenter.swift; sourceTree = SOURCE_ROOT; };
 		5469FD8427F478C100858441 /* AuthenticationSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationSpy.swift; sourceTree = "<group>"; };
 		5469FD8727F8851F00858441 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = UI/Scenes/Login/Login.storyboard; sourceTree = SOURCE_ROOT; };
+		5469FD8A27F88F5C00858441 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewControllerTests.swift; path = UITests/Secenes/Login/LoginViewControllerTests.swift; sourceTree = SOURCE_ROOT; };
+		5469FD8C27F8904D00858441 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		546C8D26276F757700525AEA /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		546C8D28276F761400525AEA /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		546C8D2B276F76C300525AEA /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
@@ -765,7 +769,16 @@
 		5469FD8627F8851000858441 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				5469FD8C27F8904D00858441 /* LoginViewController.swift */,
 				5469FD8727F8851F00858441 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5469FD8927F88F3F00858441 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5469FD8A27F88F5C00858441 /* LoginViewControllerTests.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1135,6 +1148,7 @@
 		54F01BE027A71DCA0095FC3D /* Secenes */ = {
 			isa = PBXGroup;
 			children = (
+				5469FD8927F88F3F00858441 /* Login */,
 				54F01BDE27A71D640095FC3D /* SignUp */,
 			);
 			path = Secenes;
@@ -1871,6 +1885,7 @@
 				5469FD7327EFBC0C00858441 /* RoundedTextField.swift in Sources */,
 				54F01BDA27A5D8890095FC3D /* SignUpViewController.swift in Sources */,
 				54F01BE827A734080095FC3D /* Storyboarded.swift in Sources */,
+				5469FD8D27F8904D00858441 /* LoginViewController.swift in Sources */,
 				5469FD7027EFBAD500858441 /* Color.swift in Sources */,
 				5469FD7527EFC20100858441 /* NavigationController.swift in Sources */,
 				5469FD6E27EFB91100858441 /* UIColorExtensions.swift in Sources */,
@@ -1881,6 +1896,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5469FD8B27F88F5C00858441 /* LoginViewControllerTests.swift in Sources */,
 				54F01BCC27A5CE3E0095FC3D /* SignUpViewControllerTests.swift in Sources */,
 				54F01BE327A71E1E0095FC3D /* TestExtensions.swift in Sources */,
 			);

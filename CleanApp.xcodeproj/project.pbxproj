@@ -761,6 +761,7 @@
 		5469FD8127F4760E00858441 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				5469FD8227F4769800858441 /* LoginPresenter.swift */,
 				5469FD7F27F4760900858441 /* LoginViewModel.swift */,
 			);
 			path = Login;
@@ -1051,7 +1052,6 @@
 			isa = PBXGroup;
 			children = (
 				54F01B8D279DF5200095FC3D /* SignUpPresenter.swift */,
-				5469FD8227F4769800858441 /* LoginPresenter.swift */,
 				54F01BA627A2BF520095FC3D /* SignUpViewModel.swift */,
 			);
 			path = SignUp;

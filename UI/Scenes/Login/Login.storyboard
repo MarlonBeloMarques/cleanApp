@@ -93,8 +93,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="Fhk-9H-hTI" id="M9a-BU-0a9"/>
                         <outlet property="loadingIndicator" destination="Jlm-tf-yvD" id="B5A-go-r4K"/>
                         <outlet property="loginButton" destination="udI-IT-Qwv" id="bX5-lQ-WAd"/>
+                        <outlet property="passwordTextField" destination="wdV-wg-xll" id="vZR-kI-KF5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

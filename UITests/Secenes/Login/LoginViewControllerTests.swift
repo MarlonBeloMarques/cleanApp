@@ -31,6 +31,7 @@ extension LoginViewControllerTests {
         let sut = LoginViewController.instantiate()
         sut.login = loginSpy
         sut.loadViewIfNeeded()
+        checkMemoryLeak(for: sut)
         return sut
     }
 }

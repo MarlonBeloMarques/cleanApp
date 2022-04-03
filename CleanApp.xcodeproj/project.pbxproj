@@ -44,6 +44,7 @@
 		5469FD9427F8E31E00858441 /* RemoteAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FD9327F8E31E00858441 /* RemoteAuthenticationFactory.swift */; };
 		5469FD9627F8E3B600858441 /* LoginControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FD9527F8E3B600858441 /* LoginControllerFactory.swift */; };
 		5469FD9727F8E4CA00858441 /* AuthenticationSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FD8427F478C100858441 /* AuthenticationSpy.swift */; };
+		5469FD9A27F9CEA300858441 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5469FD9927F9CEA300858441 /* Welcome.storyboard */; };
 		546C8D27276F757700525AEA /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D26276F757700525AEA /* TestExtensions.swift */; };
 		546C8D29276F761400525AEA /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D28276F761400525AEA /* TestFactories.swift */; };
 		546C8D2C276F76C300525AEA /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D2B276F76C300525AEA /* HttpClientSpy.swift */; };
@@ -393,6 +394,7 @@
 		5469FD9127F8E0F700858441 /* LoginControllerFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginControllerFactoryTests.swift; sourceTree = "<group>"; };
 		5469FD9327F8E31E00858441 /* RemoteAuthenticationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAuthenticationFactory.swift; sourceTree = "<group>"; };
 		5469FD9527F8E3B600858441 /* LoginControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginControllerFactory.swift; sourceTree = "<group>"; };
+		5469FD9927F9CEA300858441 /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		546C8D26276F757700525AEA /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		546C8D28276F761400525AEA /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		546C8D2B276F76C300525AEA /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
@@ -791,6 +793,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		5469FD9827F9CE9300858441 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				5469FD9927F9CEA300858441 /* Welcome.storyboard */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		546C8D25276F753800525AEA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1149,6 +1159,7 @@
 		54F01BDF27A71DC30095FC3D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				5469FD9827F9CE9300858441 /* Welcome */,
 				5469FD8627F8851000858441 /* Login */,
 				54F01BDD27A71D540095FC3D /* SignUp */,
 			);
@@ -1725,6 +1736,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54F01BDC27A5D8CA0095FC3D /* SignUp.storyboard in Resources */,
+				5469FD9A27F9CEA300858441 /* Welcome.storyboard in Resources */,
 				54AD139927EFAB5F00EBE696 /* Images.xcassets in Resources */,
 				5469FD8827F8851F00858441 /* Login.storyboard in Resources */,
 			);

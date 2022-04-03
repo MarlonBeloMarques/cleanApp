@@ -48,6 +48,7 @@
 		5469FD9C27F9D64600858441 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FD9B27F9D64600858441 /* WelcomeViewController.swift */; };
 		5469FD9F27F9D7E100858441 /* WelcomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FD9E27F9D7E100858441 /* WelcomeViewControllerTests.swift */; };
 		5469FDA127F9E85B00858441 /* WelcomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FDA027F9E85B00858441 /* WelcomeRouterTests.swift */; };
+		5469FDA327FA2DF600858441 /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469FDA227FA2DF600858441 /* WelcomeRouter.swift */; };
 		546C8D27276F757700525AEA /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D26276F757700525AEA /* TestExtensions.swift */; };
 		546C8D29276F761400525AEA /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D28276F761400525AEA /* TestFactories.swift */; };
 		546C8D2C276F76C300525AEA /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C8D2B276F76C300525AEA /* HttpClientSpy.swift */; };
@@ -401,6 +402,7 @@
 		5469FD9B27F9D64600858441 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5469FD9E27F9D7E100858441 /* WelcomeViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewControllerTests.swift; sourceTree = "<group>"; };
 		5469FDA027F9E85B00858441 /* WelcomeRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeRouterTests.swift; sourceTree = "<group>"; };
+		5469FDA227FA2DF600858441 /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
 		546C8D26276F757700525AEA /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		546C8D28276F761400525AEA /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
 		546C8D2B276F76C300525AEA /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
@@ -804,6 +806,7 @@
 			children = (
 				5469FD9927F9CEA300858441 /* Welcome.storyboard */,
 				5469FD9B27F9D64600858441 /* WelcomeViewController.swift */,
+				5469FDA227FA2DF600858441 /* WelcomeRouter.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -1927,6 +1930,7 @@
 				5469FD9C27F9D64600858441 /* WelcomeViewController.swift in Sources */,
 				54F01BE627A72FEB0095FC3D /* UIViewControllerExtensions.swift in Sources */,
 				5469FD7327EFBC0C00858441 /* RoundedTextField.swift in Sources */,
+				5469FDA327FA2DF600858441 /* WelcomeRouter.swift in Sources */,
 				54F01BDA27A5D8890095FC3D /* SignUpViewController.swift in Sources */,
 				54F01BE827A734080095FC3D /* Storyboarded.swift in Sources */,
 				5469FD8D27F8904D00858441 /* LoginViewController.swift in Sources */,
